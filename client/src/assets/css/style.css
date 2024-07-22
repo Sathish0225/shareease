@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU&display=swap');
+
+* {
+    font-family: Open+Sans, 'Verdana';
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #D3D3D3;
+    border-radius: 50px;
+    border: 2px solid #D3D3D3;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fd;
+    font-size: 14px;
+}
+
+.pe-cursor {
+    cursor: pointer;
+}
+
+.hover:hover {
+    cursor: pointer;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+}
+
+.media-body {
+    display: table-cell;
+    vertical-align: top;
+    overflow: hidden;
+    zoom: 1;
+    width: 10000px;
+}
+
+.media-heading {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.content {
+    position: relative;
+    min-height: 100vh;
+    transition: all .3s;
+}
+
+.content-header {
+    padding: 20px 25px;
+    position: relative;
+}
+
+.content-body {
+    min-height: calc(100vh - 100px);
+}
+
+.content-footer {
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .03)
+}
+
+.content-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 32px;
+    font-size: 20px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.content-menu {
+    color: #292E33;
+}
+
+.content-menu:hover {
+    background-color: #e9ebf0;
+    color: #292E33;
+}
+
+.welcome-menu {
+    display: inline-block;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.setting-menu-nav-link,
+.profile-menu-nav-link {
+    color: #292E33;
+    vertical-align: text-bottom;
+    text-decoration: none;
+}
+
+.setting-menu-nav-link:hover,
+.profile-menu-nav-link:hover {
+    color: #292E33;
+}
+
+.content-body {
+    padding: 20px 20px;
+}
+
+.content-body .breadcrumb {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.content-body .breadcrumb a {
+    color: #ef5907;
+    text-decoration: none;
+}
+
+.content-menu .dropdown-toggle::after {
+    display: none;
+}
+
+
+.custom-scrollbar {
+    height: auto;
+    max-height: 350px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+footer {
+    box-shadow: 0px 2px 3px #eee, 0px -2px 3px #eee;
+}
+
+.footer-bottom {
+    padding: 20px 0;
+    background: #fff
+}
+
+.footer-bottom .section-wrapper p {
+    margin-bottom: 0
+}
+
+.footer-bottom .section-wrapper p a {
+    padding: 5px;
+    font-weight: 600;
+    color: #000
+}
+
+.menu-content {
+    display: none;
+}
+
+.menu-content.visible {
+    display: block;
+}
+
+.loading {
+    svg {
+        width: 100px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 999999999999999;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* layout.css Style */
+.upload-drop-zone {
+    height: 100px;
+    border-width: 2px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+/* skin.css Style*/
+.upload-drop-zone {
+    color: #ccc;
+    border-style: dashed;
+    border-color: #ccc;
+    line-height: 100px;
+    text-align: center
+}
+
+.upload-drop-zone.drop {
+    color: #222;
+    border-color: #222;
+}
+
+.shareIcon {
+    color: black;
+
+    & svg:hover {
+        cursor: pointer
+    }
+}
+
+.actionIcon {
+    & svg:hover {
+        cursor: pointer
+    }
+}
+
+.listUser {
+    overflow-y: auto;
+    max-height: 200px;
+    margin: .5em auto;
+
+    .userHolder {
+        display: flex;
+        padding: 5px 5px;
+        background: white;
+        justify-content: space-between;
+        align-content: center;
+
+        & span {
+            align-self: center;
+        }
+    }
+}
+
+.shareIcon.shareDisable {
+    & svg {
+        color: darkgrey;
+
+        &:hover {
+            cursor: not-allowed !important;
+        }
+    }
+}
+
+.rdt_Table {
+    border: 1px solid #ddd;
+}
+
+.rdt_TableRow {
+    border-bottom: 1px solid #ddd;
+}
+
+.rdt_TableRow:nth-of-type(even) {
+    background-color: #f9f9f9;
+}
+
+.rdt_TableHead {
+    background-color: #f1f1f1;
+    font-weight: bold;
+}
+
+.rdt_TableCell {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+@media(min-width:992px) {
+
+    .menu-content {
+        display: flex !important;
+    }
+
+    .d-lg-none {
+        display: none !important;
+    }
+}

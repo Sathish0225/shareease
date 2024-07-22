@@ -1,0 +1,142 @@
+* {
+    font-family: Open+Sans, 'Verdana';
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #D3D3D3;
+    border-radius: 50px;
+    border: 2px solid #D3D3D3;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fd;
+    font-size: 14px;
+}
+
+.content-center {
+    width: 100%;
+    max-width: 500px;
+    margin: 5% auto 2% auto;
+    text-align: center;
+}
+
+.login-content {
+    margin: 20px 10%;
+    text-align: left;
+}
+
+.box-info {
+    position: relative;
+    padding: 15px;
+    background: #fff;
+    color: #5b5b5b;
+    margin-bottom: 20px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+}
+
+.box-info .vendor-logo-div {
+    padding: 10px 0px;
+}
+
+.box-info .vendor-logo-div .vendor-logo {
+    width: 60%;
+    height: 70%;
+    pointer-events: none;
+}
+
+.box-info h2 {
+    padding: 0 15px 10px;
+    margin: 5px -15px 20px;
+    font-weight: 400;
+    font-size: 16px;
+    display: block;
+    color: #5b5b5b;
+    border-bottom: 1px solid #DDD;
+}
+
+.input-group-text {
+    background-color: #fff;
+}
+
+.input-group-text .fa-solid {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.input-group-text {
+    border-radius: 0px;
+    border-right: 0px;
+}
+
+.l-input {
+    border-left: 0px;
+    padding: .375rem 0;
+}
+
+.form-control,
+.btn {
+    border-radius: 0px;
+
+}
+
+.l-input::-webkit-input-placeholder {
+    color: #aaa;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.content-footer {
+    padding: 10px;
+    margin: -15px;
+    background-color: rgba(0, 0, 0, .03);
+}
+
+.content-footer-link {
+    text-decoration: none;
+    color: #5b5b5b;
+    font-size: 12px;
+}
+
+.content-footer-copyright-text {
+    vertical-align: middle;
+    font-size: 10px;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus {
+    border-color: #DDD;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+@media screen and (max-width: 500px) {
+    .box-info .vendor-logo-div .vendor-logo {
+        width: 45%;
+        height: 50%;
+    }
+}
